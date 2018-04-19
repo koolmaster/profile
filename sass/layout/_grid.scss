@@ -1,0 +1,134 @@
+.section {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+    font-family: $font-family;
+    font-size: 1.2rem;
+}
+
+// Class parent - child
+#profile {
+    padding: 33px;
+    @include flex();
+    .lbl2-3 {
+        color: $color-blue;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .lbl2-3b {
+        color: $color-black;
+    }
+    .col-8 {
+        padding-left: 30px;
+    }
+}
+
+// Class list
+.lst2-1 {
+    @include flex-center-wrap();
+    .item2-1 {
+        width: 50%;
+        font-size: 1.2rem;
+        height: 30px;
+        padding-bottom: 10px;
+        @extend .lst2-1;
+    }
+    .lbl2-6 {
+        font-size: 1.1rem;
+        display: inline-block;
+        font-family: $font-family;
+        &:first-child {
+            width: 80px;
+            font-weight: 300;
+        }
+        &:last-child {
+            width: calc(100% - 80px);
+        }
+    }
+}
+
+.lst-social {
+    @include display-flex();
+    .item-social {
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0 8px 12px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+// Class label
+.lbl2-1 {
+    padding-left: 8px;
+}
+
+.lbl2-2 {
+    font-size: 1rem;
+    text-align: center;
+    .fa {
+        color: $color-blue;
+    }
+    .lbl2-2b {
+        color: $color-brown;
+    }
+}
+
+.lbl2-4 {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.lbl2-5 {
+    padding-bottom: 27px;
+    line-height: 28px;
+    color: $color-black;
+    font-family: $font-letter;
+}
+
+.lbl2-7 {
+    font-weight: $weight-300;
+    margin: 10px 0;
+}
+
+// Class img and link
+.img2-1 {
+    display: block;
+    width: 100%;
+    box-shadow: $box-shadow-1;
+    margin-bottom: 20px;
+}
+
+.link2-1 {
+    display: block;
+    margin-bottom: 25px;
+    padding: 15px 5px;
+    box-shadow: $box-shadow-1;
+    transition: all .3s;
+    color: $color-brown;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    &:hover {
+        box-shadow: $box-shadow-hover;
+    }
+}
+
+.link2-2 {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    transition: all .2s;
+    color: $color-brown;
+    border: 1px solid $color-brown;
+    &:hover {
+        color: $color-white;
+        border-color: $color-blue;
+        background-color: $color-blue;
+        box-shadow: 0 0 3px $color-blue;
+    }
+}

@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed"), url("../fonts/MYRIADPRO-COND.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Semibold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold Italic"), url("../fonts/MYRIADPRO-SEMIBOLDIT.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold"), url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed Italic"), url("../fonts/MYRIADPRO-CONDIT.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Italic"), url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed Italic"), url("../fonts/MYRIADPRO-BOLDCONDIT.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed"), url("../fonts/MYRIADPRO-BOLDCOND.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff"); }
+
+.col-4 {
+  flex-basis: 33.33333%; }
+
+.col-8 {
+  flex-basis: 66.66667%; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .5px; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html, body {
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background: #fff;
+  font-size: 14px;
+  overflow-x: hidden;
+  position: relative; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+.section {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem; }
+
+#profile {
+  padding: 33px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  #profile .lbl2-3 {
+    color: #0487cc;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 1px; }
+  #profile .lbl2-3b {
+    color: #000; }
+  #profile .col-8 {
+    padding-left: 30px; }
+
+.lst2-1, .lst2-1 .item2-1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .lst2-1 .item2-1 {
+    width: 50%;
+    font-size: 1.2rem;
+    height: 30px;
+    padding-bottom: 10px; }
+  .lst2-1 .lbl2-6 {
+    font-size: 1.1rem;
+    display: inline-block;
+    font-family: "Oswald", sans-serif; }
+    .lst2-1 .lbl2-6:first-child {
+      width: 80px;
+      font-weight: 300; }
+    .lst2-1 .lbl2-6:last-child {
+      width: calc(100% - 80px); }
+
+.lst-social {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .lst-social .item-social {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 8px 12px; }
+    .lst-social .item-social:first-child {
+      margin-left: 0; }
+
+.lbl2-1 {
+  padding-left: 8px; }
+
+.lbl2-2 {
+  font-size: 1rem;
+  text-align: center; }
+  .lbl2-2 .fa {
+    color: #0487cc; }
+  .lbl2-2 .lbl2-2b {
+    color: #757575; }
+
+.lbl2-4 {
+  padding-bottom: 20px;
+  font-size: 1.2rem; }
+
+.lbl2-5 {
+  padding-bottom: 27px;
+  line-height: 28px;
+  color: #000;
+  font-family: "PT Sans Narrow", sans-serif; }
+
+.lbl2-7 {
+  font-weight: 300;
+  margin: 10px 0; }
+
+.img2-1 {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px; }
+
+.link2-1 {
+  display: block;
+  margin-bottom: 25px;
+  padding: 15px 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+  color: #757575;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+  .link2-1:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.2); }
+
+.link2-2 {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  transition: all .2s;
+  color: #757575;
+  border: 1px solid #757575; }
+  .link2-2:hover {
+    color: #fff;
+    border-color: #0487cc;
+    background-color: #0487cc;
+    box-shadow: 0 0 3px #0487cc; }
+
+.body {
+  background-color: #efefef; }
+
+[class*="lbl2-"] {
+  color: #757575; }
+
+.content {
+  padding: 80px 0;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 0 auto; }
+
+@media screen and (min-width: 1400px) {
+  .content {
+    width: 1200px; } }

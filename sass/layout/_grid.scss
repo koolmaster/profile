@@ -7,8 +7,8 @@
 
 // Class parent - child
 #profile {
-    padding: 33px;
-    @include flex();
+    padding: 15px;
+    @include display-flex-wrap();
     .lbl2-3 {
         color: $color-blue;
         font-size: 2.3rem;
@@ -20,7 +20,7 @@
         color: $color-black;
     }
     .col-8 {
-        padding-left: 30px;
+        margin-top: 30px;
     }
 }
 
@@ -28,22 +28,19 @@
 .lst2-1 {
     @include flex-center-wrap();
     .item2-1 {
-        width: 50%;
+        width: 100%;
         font-size: 1.2rem;
-        height: 30px;
         padding-bottom: 10px;
         @extend .lst2-1;
     }
     .lbl2-6 {
-        font-size: 1.1rem;
         display: inline-block;
+        word-break: break-all;
         font-family: $font-family;
+        width: 100%;
         &:first-child {
-            width: 80px;
             font-weight: 300;
-        }
-        &:last-child {
-            width: calc(100% - 80px);
+            margin-bottom: 10px;
         }
     }
 }
@@ -66,7 +63,7 @@
 }
 
 .lbl2-2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
     .fa {
         color: $color-blue;

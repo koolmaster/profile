@@ -1,28 +1,46 @@
 @import "./helpers/_variables";
-@import "./helpers/_functions";
 @import "./helpers/_mixins";
-@import "./helpers/_helpers";
+@import "./helpers/_functions";
 @import "./base/_reset";
-@import "./layout/_grid";
-.body {
-    background-color: #efefef;
-}
-
-[class*="lbl2-"] {
-    color: $color-brown;
-}
-
-.content {
-    padding: 80px 0;
-    color: $color-black;
-    font-family: $font-family; 
-    font-size: 1.2rem;
-    width: 70%;
-    margin: 0 auto; 
-}
-
+@import "./helpers/_helpers";
+@import "./layout/_grid"; 
+ 
 @media screen and (min-width: 1400px) {
-    .content {
-        width: 1200px;
+    .content {width: 1200px;}
+}
+
+@media screen and (min-width: 1024px) {
+    .lbl2-2 {font-size: 1.2rem;}
+    .lst2-1 {
+        .lbl2-6 {
+            font-size: 1.2rem; 
+        }
     }
+}
+ 
+@media screen and (min-width: 768px) {
+    .content {width: 90%;}
+    #profile {
+        padding: 33px;
+        .col-8 {
+            margin-top: 0;  
+            padding-left: 30px; 
+        }
+    }
+    .lst2-1 {
+        .lbl2-6 {
+            &:first-child {
+                width: 100%;
+            } 
+            &:last-child {
+                width: calc(100% - 80px);
+            }
+        }
+        .item2-1 {
+            width: 50%;
+            height: 30px;
+        }
+    }
+    .col-4 {flex-basis: $width-4;}
+    .col-8 {flex-basis: $width-8;}
 }

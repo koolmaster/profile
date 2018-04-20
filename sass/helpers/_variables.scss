@@ -1,8 +1,12 @@
 // Sass Variables
 $font-family: 'Oswald',
 sans-serif;
-$font-letter: 'PT Sans Narrow',
+$font-letter: 'Dosis',
 sans-serif;
+// Font size
+$size-1: 1rem;
+$size-1-1: $size-1+.1;
+$size-1-2: $size-1+.2;
 // Color
 $color-black: #000;
 $color-white: #fff;
@@ -26,6 +30,7 @@ $space-between: space-between;
 //Font weight
 $weight-300: 300;
 //Box shadow
+$box-shadow-section: 0px 1px 6px rgba(0, 0, 0, 0.10),0px 1px 6px rgba(0, 0, 0, 0.20);
 $box-shadow-1: 0 0 5px rgba(0, 0, 0, .4);
 $box-shadow-hover: 0 0 8px rgba(0, 0, 0, .30),
 0 0 12px rgba(0, 0, 0, .20);

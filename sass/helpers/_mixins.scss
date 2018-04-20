@@ -35,3 +35,25 @@
     justify-content: $space-between;
     flex-wrap: wrap;
 }
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin transition {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@mixin transform-rotate($deg) {
+    -webkit-transform: $deg;
+    -moz-transform: $deg;
+    -ms-transform: $deg;
+    -o-transform: $deg;
+    transform: $deg;
+}

@@ -3,44 +3,71 @@
 @import "./helpers/_functions";
 @import "./base/_reset";
 @import "./helpers/_helpers";
-@import "./layout/_grid"; 
- 
-@media screen and (min-width: 1400px) {
-    .content {width: 1200px;}
-}
+@import "./layout/_grid";
+
+@media screen and (min-width: 480px) {
+    #profile .lbl2-3 {
+        font-size: 2.5rem;
+    }  
+} 
+  
+@media screen and (min-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 80px 0;
+    }
+    #profile {
+        padding: 33px; 
+    }
+    .col-8 {  
+        margin-top: 0;
+        padding-left: 30px;
+    }
+    .lst2-1 {
+        .item2-1 {
+            width: 50%;
+            font-size: $size-1;
+        }
+    }
+    .lbl2-2 {
+        font-size: 0.8rem;
+    }
+    .col-4 {
+        flex-basis: $width-4;
+    } 
+    .col-8 {
+        flex-basis: $width-8;
+    }
+} 
 
 @media screen and (min-width: 1024px) {
-    .lbl2-2 {font-size: 1.2rem;}
-    .lst2-1 {
-        .lbl2-6 {
-            font-size: 1.2rem; 
-        }
-    }
-}
- 
-@media screen and (min-width: 768px) {
-    .content {width: 90%;}
-    #profile {
-        padding: 33px;
-        .col-8 {
-            margin-top: 0;  
-            padding-left: 30px; 
-        }
-    }
-    .lst2-1 {
+    .lst2-1 {   
         .lbl2-6 {
             &:first-child {
-                width: 100%;
-            } 
+                width: 70px;
+                margin-bottom: 0px;
+            }
             &:last-child {
-                width: calc(100% - 80px);
+                width: calc(100% - 70px);
             }
         }
         .item2-1 {
-            width: 50%;
-            height: 30px;
+            font-size: $size-1;
+            height: 35px;
         }
     }
-    .col-4 {flex-basis: $width-4;}
-    .col-8 {flex-basis: $width-8;}
+    .lbl2-2 {
+        font-size: $size-1-1;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content {
+        width: 1000px;
+    }
+    .lst2-1 {
+        .item2-1 {
+            font-size: $size-1-1;
+        }
+    }
 }

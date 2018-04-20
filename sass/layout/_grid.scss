@@ -1,35 +1,41 @@
 .section {
     background-color: #ffffff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+    @include box-shadow($box-shadow-section);
     font-family: $font-family;
-    font-size: 1.2rem;
+    font-size: $size-1-2;
+    margin-bottom: 80px;
 }
 
-// Class parent - child
+/* =============================================
+	1. PROFILE SECTION
+ ============================================= */
+
 #profile {
     padding: 15px;
     @include display-flex-wrap();
-    .lbl2-3 {
-        color: $color-blue;
-        font-size: 2.3rem;
-        text-transform: uppercase;
-        padding-bottom: 10px;
-        letter-spacing: 1px;
-    }
-    .lbl2-3b {
-        color: $color-black;
-    }
-    .col-8 {
-        margin-top: 30px;
-    }
 }
 
-// Class list
+.lbl2-3 {
+    color: $color-blue;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.lbl2-3b {
+    color: $color-black;
+}
+
+.col-8 {
+    margin-top: 30px;
+}
+
 .lst2-1 {
     @include flex-center-wrap();
     .item2-1 {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: $size-1-2;
         padding-bottom: 10px;
         @extend .lst2-1;
     }
@@ -49,7 +55,7 @@
     @include display-flex();
     .item-social {
         display: inline-block;
-        font-size: 1rem;
+        font-size: $size-1;
         margin: 0 8px 12px;
         &:first-child {
             margin-left: 0;
@@ -57,13 +63,12 @@
     }
 }
 
-// Class label
 .lbl2-1 {
     padding-left: 8px;
 }
 
 .lbl2-2 {
-    font-size: 0.9rem;
+    font-size: $size-1-1;
     text-align: center;
     .fa {
         color: $color-blue;
@@ -75,7 +80,7 @@
 
 .lbl2-4 {
     padding-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: $size-1-2;
 }
 
 .lbl2-5 {
@@ -88,9 +93,7 @@
 .lbl2-7 {
     font-weight: $weight-300;
     margin: 10px 0;
-}
-
-// Class img and link
+} // Class img and link
 .img2-1 {
     display: block;
     width: 100%;
@@ -107,7 +110,7 @@
     color: $color-brown;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: $size-1-2;
     &:hover {
         box-shadow: $box-shadow-hover;
     }
@@ -128,4 +131,186 @@
         background-color: $color-blue;
         box-shadow: 0 0 3px $color-blue;
     }
+}
+
+.lbl2-8 {
+    color: #0487cc;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+/* =============================================
+	2. EXPERIENCE SECTION
+ ============================================= */
+
+.timeline {
+    position: relative;
+    &:before {
+        content: " ";
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        width: 3px;
+        background: $color-white;
+        left: 50%;
+        margin-left: -1.5px;
+        @include box-shadow($box-shadow-section);
+    }
+    >.item2-3 {
+        margin-top: 20px;
+        position: relative;
+        width: 50%;
+        float: left;
+        clear: left;
+        &:before,
+        &:after {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            clear: both;
+        }
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:nth-of-type(2) {
+            margin-top: 50px;
+        }
+    }
+    .badge {
+        color: $color-blue;
+        width: 24px;
+        height: 24px;
+        line-height: 50px;
+        text-align: center;
+        position: absolute;
+        top: 16px;
+        right: -12px;
+        z-index: 100;
+    }
+    .panel {
+        width: calc(100% - 25px);
+        width: -moz-calc(100% - 25px);
+        width: -webkit-calc(100% - 25px);
+        float: left;
+        background: $color-white;
+        position: relative;
+        padding: 30px;
+        @include box-shadow($box-shadow-section);
+        @include transition();
+        &:before {
+            position: absolute;
+            top: 26px;
+            right: -15px;
+            display: inline-block;
+            border-top: 15px solid transparent;
+            border-left: 15px solid #ffffff;
+            border-right: 0 solid #ffffff;
+            border-bottom: 15px solid transparent;
+            content: " ";
+        }
+        &:after {
+            position: absolute;
+            top: 27px;
+            right: -14px;
+            display: inline-block;
+            border-top: 14px solid transparent;
+            border-left: 14px solid #ffffff;
+            border-right: 0 solid #ffffff;
+            border-bottom: 14px solid transparent;
+            content: " ";
+        }
+    }
+    >.inverted {
+        float: right;
+        clear: right;
+        .badge {
+            left: -12px;
+        }
+        .panel {
+            float: right;
+            &:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+            &:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+        }
+    }
+    .lbl2-4 {
+        font-size: 15px;
+        padding: 10px 0;
+        font-weight: $weight-300 + 100;
+        color: $color-brown;
+        text-transform: capitalize;
+    }
+    .title2-1 {
+        font: {
+            size: ($size-1-2 + .2);
+            weight: $weight-300+300;
+            family: $font-letter;
+        }
+        color: $color-black;
+        padding-top: 5px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:after {
+            display: block;
+            content: '';
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 50px;
+            height: 3px;
+            background: $color-blue;
+            border-radius: 30px;
+        }
+    }
+    .desc2-1 {
+        font: {
+            size: $size-1-2 + .1;
+            weight: $weight-300;
+            family: $font-letter;
+        }
+        line-height: 26px;
+        margin-top: 10px;
+    }
+    .time2-1 {
+        display: inline-block;
+        padding: 8px 15px;
+        color: $color-white;
+        margin-top: 25px;
+        font-size: $size-1 - .1;
+        font-weight: $weight-300 + 300;
+        position: relative;
+        background: $color-blue;
+        @include box-shadow($box-shadow-section);
+        &:before {
+            content: '';
+            position: absolute;
+            background: transparent;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            top: -10px;
+            right: 0;
+            border: 10px solid;
+            border-left-color: $color-blue;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            @include transform-rotate(rotate(180deg));
+        }
+    }
+}
+
+.no-float {
+    float: none !important;
 }

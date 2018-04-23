@@ -50,10 +50,38 @@
     transition: all 0.3s;
 }
 
+@mixin transition-custom($ev) {
+    -webkit-transition: $ev;
+    -moz-transition: $ev;
+    -ms-transition: $ev;
+    -o-transition: $ev;
+    transition: $ev;
+}
+
 @mixin transform-rotate($deg) {
     -webkit-transform: $deg;
     -moz-transform: $deg;
     -ms-transform: $deg;
     -o-transform: $deg;
     transform: $deg;
+}
+
+@mixin horizontal-center() {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin layout-card($bg,$padding,$shadow) {
+    background: $bg;
+    padding: $padding;
+    @include box-shadow($shadow);
+}
+
+@mixin bg-blue() {
+    background: $color-blue;
+    color: $color-white;
 }

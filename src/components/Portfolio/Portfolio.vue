@@ -1,0 +1,193 @@
+<template>
+  <div id="portfolio">
+    <section id="profile" class="section">
+      <div class="col-4">
+        <img src="../../assets/img/avatar.jpg" alt="my avatar" class="img2-1">
+        <a href="#" class="link2-1">
+          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+          <span class="lbl2-1">Download CV</span>
+        </a>
+        <div class="lbl2-2">
+          <i class="fa fa-check" aria-hidden="true"></i>
+          <span class="lbl2-2b">available on freelance and photography</span>
+        </div>
+      </div>
+      <div class="col-8">
+        <h2 class="lbl2-3">
+          <span class="lbl2-3b">Hi, I'm </span>Trinh Quoc Thinh</h2>
+        <h3 class="lbl2-4">web developer & web designer</h3>
+        <p class="lbl2-5">Hello! I’m Trinh Quoc Thinh. Web Developer with over 2.5 years of experience. Experienced with all stages of the
+          development cycle for dynamic web projects. Having an in-depth knowledge including advanced HTML5, CSS3, JavaScript,
+          jQuery, VueJS, knowledge AngularJS, Angular 4. Strong background in management and leadership.</p>
+        <ul class="lst2-1">
+          <li class="item2-1">
+            <span class="lbl2-6">D.O.B</span>
+            <span class="lbl2-6">14/08/1992</span>
+          </li>
+          <li class="item2-1">
+            <span class="lbl2-6">Phone</span>
+            <a href="tel:0973001429" class="lbl2-6">0973.001.429</a>
+          </li>
+          <li class="item2-1">
+            <span class="lbl2-6">Address</span>
+            <span class="lbl2-6">1052/2 Lạc Long Quân Q.Tân Bình</span>
+          </li>
+          <li class="item2-1">
+            <span class="lbl2-6">Email</span>
+            <a href="mailto:koolmaster1408@gmail.com" class="lbl2-6">koolmaster1408@gmail.com</a>
+          </li>
+          <li class="item2-1">
+            <span class="lbl2-6">Webside</span>
+            <a href="#" class="lbl2-6">www.koolmaster.com</a>
+          </li>
+          <li class="item2-1">
+            <span class="lbl2-6">Nationality</span>
+            <span class="lbl2-6">Viet Nam</span>
+          </li>
+        </ul>
+        <p class="lbl2-7">Social Link</p>
+        <ul class="lst-social">
+          <li class="item-social">
+            <a href="https://www.facebook.com/trinh.q.thinh" class="link2-2" data-tootik="Facebook" data-tootik-conf="square">
+              <i class=" fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="item-social">
+            <a href="https://plus.google.com/105835375917188733153?hl=vi" class="link2-2" data-tootik="Google +" data-tootik-conf="square">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+          <li class="item-social">
+            <a href="https://www.instagram.com/koolmaster1408/" class="link2-2" data-tootik="Instagram" data-tootik-conf="square">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="item-social">
+            <a href="#" class="link2-2" data-tootik="Linkedin" data-tootik-conf="square">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="item-social">
+            <a href="#" class="link2-2" data-tootik="Skype" data-tootik-conf="square">
+              <i class="fa fa-skype"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="Experience">
+      <h2 class="lbl2-8">Experience</h2>
+      <div class="timeline">
+        <div class="line-header fa fa-briefcase"></div>
+        <ul class="tree">
+          <li class="branch">
+            <span class="branch-time">July 2017 - Current</span>
+            <h3 class="branch-job">Front-End Developer and Web Designer</h3>
+            <p class="branch-company">FPT Infomation System</p>
+            <p class="branch-des">
+              Lorem ipsum dolor sit amet, consectetur adipisci ng elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta
+              massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+            </p>
+          </li>
+          <li class="branch">
+            <span class="branch-time">Jan 2015 - Current</span>
+            <h3 class="branch-job">Wordpress Developer</h3>
+            <p class="branch-company">Haravan</p>
+            <p class="branch-des">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper lacus tortor, quis bibendum odio mattis vitae. Cras porta
+              massa pretium auctor congue. Suspendisse ante massa, euismod sit amet sem sed, viverra tristique diam.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="skill">
+      <h2 class="lbl2-8">Skill</h2>
+      <div class="wrapper">
+        <div class="professtional col-5">
+          <h3 class="title2-1">PROFESSIONAL SKILLS</h3>
+          <ul class="lst-skill">
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">Html & Css</span>
+                <span class="lbl2-9">95%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 95%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">Jquery</span>
+                <span class="lbl2-9">90%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 90%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">VueJS</span>
+                <span class="lbl2-9">80%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 80%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">AngularJS & Angular 2,4</span>
+                <span class="lbl2-9">60%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 60%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">Photoshop</span>
+                <span class="lbl2-9">90%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 90%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">Lightroom</span>
+                <span class="lbl2-9">85%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 85%"></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="additional col-7">
+          <h3 class="title2-1">ADDITIONAL SKILLS</h3>
+          <div class="chart">
+            <div class="circle">
+              <div class="percentage">90%</div>
+              <vue-easy-pie-chart :percent="30"></vue-easy-pie-chart>
+              <div class="lbl2-10">English</div>
+            </div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "portfolio",
+  data() {
+    return {};
+  }
+};
+</script>
+<style lang="scss" scoped>
+@import "portfolio.scss";
+</style> 

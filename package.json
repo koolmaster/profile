@@ -17,6 +17,7 @@
     "@fortawesome/vue-fontawesome": "0.0.22",
     "tootik": "^1.0.2",
     "vue": "^2.5.11",
+    "vue-easy-pie-chart": "^1.0.3",
     "vue-router": "^3.0.1"
   },
   "browserslist": [

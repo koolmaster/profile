@@ -1,14 +1,17 @@
+<style lang="scss" scoped>
+@import "portfolio.scss";
+</style> 
 <template>
   <div id="portfolio">
     <section id="profile" class="section">
       <div class="col-4">
         <img src="../../assets/img/avatar.jpg" alt="my avatar" class="img2-1">
         <a href="#" class="link2-1">
-          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+          <font-awesome-icon :icon="['fas', 'cloud-download-alt']" />
           <span class="lbl2-1">Download CV</span>
         </a>
         <div class="lbl2-2">
-          <i class="fa fa-check" aria-hidden="true"></i>
+          <font-awesome-icon :icon="['fas', 'check']" />
           <span class="lbl2-2b">available on freelance and photography</span>
         </div>
       </div>
@@ -49,27 +52,27 @@
         <ul class="lst-social">
           <li class="item-social">
             <a href="https://www.facebook.com/trinh.q.thinh" class="link2-2" data-tootik="Facebook" data-tootik-conf="square">
-              <i class=" fa fa-facebook"></i>
+              <font-awesome-icon :icon="['fab', 'facebook-f']" />
             </a>
           </li>
           <li class="item-social">
             <a href="https://plus.google.com/105835375917188733153?hl=vi" class="link2-2" data-tootik="Google +" data-tootik-conf="square">
-              <i class="fa fa-google-plus"></i>
+              <font-awesome-icon :icon="['fab', 'google-plus-g']" />
             </a>
           </li>
           <li class="item-social">
             <a href="https://www.instagram.com/koolmaster1408/" class="link2-2" data-tootik="Instagram" data-tootik-conf="square">
-              <i class="fa fa-instagram"></i>
+              <font-awesome-icon :icon="['fab', 'instagram']" />
             </a>
           </li>
           <li class="item-social">
             <a href="#" class="link2-2" data-tootik="Linkedin" data-tootik-conf="square">
-              <i class="fa fa-linkedin"></i>
+              <font-awesome-icon :icon="['fab', 'linkedin-in']" />
             </a>
           </li>
           <li class="item-social">
             <a href="#" class="link2-2" data-tootik="Skype" data-tootik-conf="square">
-              <i class="fa fa-skype"></i>
+              <font-awesome-icon :icon="['fab', 'skype']" />
             </a>
           </li>
         </ul>
@@ -78,7 +81,7 @@
     <section id="Experience">
       <h2 class="lbl2-8">Experience</h2>
       <div class="timeline">
-        <div class="line-header fa fa-briefcase"></div>
+        <div class="line-header"><font-awesome-icon :icon="['fas', 'briefcase']" /></div>
         <ul class="tree">
           <li class="branch">
             <span class="branch-time">July 2017 - Current</span>
@@ -114,6 +117,15 @@
               </p>
               <p class="process">
                 <span class="process-bar" style="width: 95%"></span>
+              </p>
+            </li>
+            <li class="items-skill">
+              <p class="title-skill">
+                <span class="lbl2-9">Sass</span>
+                <span class="lbl2-9">90%</span>
+              </p>
+              <p class="process">
+                <span class="process-bar" style="width: 90%"></span>
               </p>
             </li>
             <li class="items-skill">
@@ -167,12 +179,20 @@
           <h3 class="title2-1">ADDITIONAL SKILLS</h3>
           <div class="chart">
             <div class="circle">
-              <div class="percentage">90%</div>
-              <vue-easy-pie-chart :percent="30"></vue-easy-pie-chart>
+              <div class="percentage">45%</div>    
+              <vue-easy-pie-chart :percent="50" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
               <div class="lbl2-10">English</div>
             </div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle">
+              <div class="percentage">80%</div>    
+              <vue-easy-pie-chart :percent="80" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
+              <div class="lbl2-10">Creativity</div>
+            </div>
+            <div class="circle">
+              <div class="percentage">75%</div>    
+              <vue-easy-pie-chart :percent="75" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
+              <div class="lbl2-10">Teamwork</div>
+            </div>
           </div>
         </div>
       </div>
@@ -181,13 +201,18 @@
 </template>
 
 <script>
+import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
+import VueEasyPieChart from "vue-easy-pie-chart";
+import "vue-easy-pie-chart/dist/vue-easy-pie-chart.css";
+
 export default {
   name: "portfolio",
+  components: {
+    FontAwesomeIcon,
+    VueEasyPieChart
+  },
   data() {
     return {};
   }
 };
 </script>
-<style lang="scss" scoped>
-@import "portfolio.scss";
-</style> 

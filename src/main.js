@@ -4,7 +4,9 @@ import VueRouter from 'vue-router';
 import Portfolio from './components/Portfolio/Portfolio.vue';
 import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
+import brand from '@fortawesome/fontawesome-free-brands';
 fontawesome.library.add(solid);
+fontawesome.library.add(brand);
 //tell vue to use the router
 Vue.use(VueRouter);
 const routes = [

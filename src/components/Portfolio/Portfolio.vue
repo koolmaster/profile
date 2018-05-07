@@ -1,6 +1,4 @@
-<style lang="scss" scoped>
-@import "portfolio.scss";
-</style> 
+
 <template>
   <div id="portfolio">
     <section id="profile" class="section">
@@ -194,6 +192,12 @@
               <div class="lbl2-10">Teamwork</div>
             </div>
           </div>
+          <ul class="skill">
+              <li class="lst-skill">
+                <font-awesome-icon :icon="['fab', 'instagram']" />
+                <span class="lbl2-10">Photography</span>
+              </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -216,3 +220,6 @@ export default {
   }
 };
 </script>
+<style type="text/scss" lang="scss">
+  @import "portfolio.scss";
+</style> 

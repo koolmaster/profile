@@ -1,10 +1,12 @@
 import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
-import Portfolio from './components/Portfolio/Portfolio.vue';
 import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
 import brand from '@fortawesome/fontawesome-free-brands';
+
+import Portfolio from './components/Portfolio/Portfolio.vue';
+
 fontawesome.library.add(solid);
 fontawesome.library.add(brand);
 //tell vue to use the router

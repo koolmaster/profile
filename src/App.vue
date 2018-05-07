@@ -5,11 +5,9 @@
 </template>
 
 <script>
-import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 export default {
   name: "app",
   components: {
-    FontAwesomeIcon
   },
   data() {
     return {};

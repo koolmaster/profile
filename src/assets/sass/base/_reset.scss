@@ -11,9 +11,9 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: $font-family;
+    font-family: 'Oswald',sans-serif;
     background: #fff;
-    font-size: 14px;
+    font-size: 12px;
     overflow-x: hidden;
     position: relative;
 }
@@ -51,3 +51,14 @@ button {
     outline: none;
     border: 0;
     cursor: pointer; }
+    
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 13px
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 14px
+  }
+}

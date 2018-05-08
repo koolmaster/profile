@@ -4,9 +4,10 @@ import VueRouter from 'vue-router';
 import Portfolio from './components/Portfolio/Portfolio.vue';
 import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
+import regular from '@fortawesome/fontawesome-free-regular';
 import brand from '@fortawesome/fontawesome-free-brands';
-fontawesome.library.add(solid);
-fontawesome.library.add(brand);
+fontawesome.library.add(solid, brand , regular);
+
 //tell vue to use the router
 Vue.use(VueRouter);
 const routes = [
@@ -20,6 +21,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App },
+  components: {App},
   router
 }).$mount('#app');

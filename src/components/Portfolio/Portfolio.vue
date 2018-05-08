@@ -1,6 +1,3 @@
-<style lang="scss" scoped>
-@import "portfolio.scss";
-</style> 
 <template>
   <div id="portfolio">
     <section id="profile" class="section">
@@ -112,20 +109,11 @@
           <ul class="lst-skill">
             <li class="items-skill">
               <p class="title-skill">
-                <span class="lbl2-9">Html & Css</span>
+                <span class="lbl2-9">Html & Css & Sass</span>
                 <span class="lbl2-9">95%</span>
               </p>
               <p class="process">
                 <span class="process-bar" style="width: 95%"></span>
-              </p>
-            </li>
-            <li class="items-skill">
-              <p class="title-skill">
-                <span class="lbl2-9">Sass</span>
-                <span class="lbl2-9">90%</span>
-              </p>
-              <p class="process">
-                <span class="process-bar" style="width: 90%"></span>
               </p>
             </li>
             <li class="items-skill">
@@ -148,7 +136,7 @@
             </li>
             <li class="items-skill">
               <p class="title-skill">
-                <span class="lbl2-9">AngularJS & Angular 2,4</span>
+                <span class="lbl2-9">AngularJS & Angular 2</span>
                 <span class="lbl2-9">60%</span>
               </p>
               <p class="process">
@@ -164,15 +152,6 @@
                 <span class="process-bar" style="width: 90%"></span>
               </p>
             </li>
-            <li class="items-skill">
-              <p class="title-skill">
-                <span class="lbl2-9">Lightroom</span>
-                <span class="lbl2-9">85%</span>
-              </p>
-              <p class="process">
-                <span class="process-bar" style="width: 85%"></span>
-              </p>
-            </li>
           </ul>
         </div>
         <div class="additional col-7">
@@ -180,26 +159,46 @@
           <div class="chart">
             <div class="circle">
               <div class="percentage">45%</div>    
-              <vue-easy-pie-chart :percent="50" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
+              <vue-easy-pie-chart :percent="45" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=spuare line-width=8 track-color=#fff></vue-easy-pie-chart>
               <div class="lbl2-10">English</div>
             </div>
             <div class="circle">
-              <div class="percentage">80%</div>    
-              <vue-easy-pie-chart :percent="80" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
+              <div class="percentage">85%</div>    
+              <vue-easy-pie-chart :percent="85" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=spuare line-width=8 track-color=#fff ></vue-easy-pie-chart>
               <div class="lbl2-10">Creativity</div>
             </div>
             <div class="circle">
-              <div class="percentage">75%</div>    
-              <vue-easy-pie-chart :percent="75" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=square line-width=10 size=115 track-color=#fff ></vue-easy-pie-chart>
+              <div class="percentage">78%</div>    
+              <vue-easy-pie-chart :percent="78" bar-color=#747474 animate=true font-size=0 scale-color=#fff line-cap=spuare line-width=8 track-color=#fff ></vue-easy-pie-chart>
               <div class="lbl2-10">Teamwork</div>
             </div>
           </div>
+         <ul class="lst-skill">
+           <li class="skill-item">
+             <font-awesome-icon :icon="['far', 'check-circle']" />
+             <span class="lbl2-10">Photography</span>
+           </li>
+           <li class="skill-item">
+             <font-awesome-icon :icon="['far', 'check-circle']" />
+             <span class="lbl2-10">Blend & Retouch</span>
+           </li>
+           <li class="skill-item">
+             <font-awesome-icon :icon="['far', 'check-circle']" />
+             <span class="lbl2-10">Mobile App & Web Design</span>
+           </li>
+           <li class="skill-item">
+             <font-awesome-icon :icon="['far', 'check-circle']" />
+             <span class="lbl2-10">UX and UI Design</span>
+           </li>
+         </ul>
         </div>
       </div>
     </section>
   </div>
 </template>
-
+<style lang="scss">
+@import "portfolio.scss";
+</style> 
 <script>
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 import VueEasyPieChart from "vue-easy-pie-chart";

@@ -1,3 +1,4 @@
+
 <template>
   <div id="portfolio">
     <section id="profile" class="section">
@@ -215,3 +216,6 @@ export default {
   }
 };
 </script>
+<style type="text/scss" lang="scss">
+@import "portfolio.scss";
+</style> 
